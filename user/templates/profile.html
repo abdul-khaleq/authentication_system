@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-<a class="btn btn-warning" href="{% url 'pass_change' %}">Change your password with old password</a>
-<a class="btn btn-warning" href="{% url 'pass_change2' %}">Change your password with old password</a>
-Hi Profile
+<div class="container py-5">
+<div>
+    <a class="btn btn-warning" href="{% url 'pass_change' %}">Change your password with old password</a>
+    <a class="btn btn-warning" href="{% url 'pass_change2' %}">Change your password without old password</a>
+</div>
+<h1 class="text-center">Profile Page</h1>
+</div>
 {% endblock content %}
